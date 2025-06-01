@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: Noto Sans JP;
+  scroll-behavior: smooth;
+  width: 100%;
+  font-size: 16px;
+}
+
+header {
+  background-image: url(/images/background1.png);
+  background-size: cover;
+  width: 100vw;
+  /* height: 80px; */
+  padding: 24px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  /* 長方形 3 */
+  box-sizing: border-box;
+  /* position: absolute; */
+  /* width: 1080px;
+  height: 50px; */
+  left: 0px;
+  top: 0px;
+  max-width: 100vw;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  /* THE LITTLE CAFE */
+  /* position: absolute; */
+  width: 154px;
+  height: 33px;
+  left: 60px;
+  top: 9px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 33px;
+  /* ボックスの高さと同一、または165% */
+  color: #505050;
+}
+
+/* MENU */
+
+.nav-menu {
+  /* position: absolute; */
+  width: 56px;
+  height: 33px;
+  left: 848px;
+  top: 9px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 33px;
+  /* ボックスの高さと同一、または165% */
+  text-align: center;
+  color: #505050;
+
+}
+
+.nav-about {
+  /* ABOUT */
+  /* position: absolute; */
+  width: 65px;
+  height: 33px;
+  left: 946px;
+  top: 9px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 33px;
+  /* ボックスの高さと同一、または165% */
+  text-align: center;
+  color: #505050;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #2e2e2e;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.concept {
+  position: relative;
+  width: 100%;
+  padding-top: 46.3%; /* 画像のアスペクト比（高さ ÷ 幅 × 100） */
+  min-height: 300px;
+  background-image: url(images/FV.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.concept-text {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Noto Sans JP';
+  font-weight: 300;
+  font-size: 3.5vw;
+  text-align: center;
+  color: #505050;
+}
+
+.menu-title {
+  font-size: 30px;
+  margin-bottom: 15px;
+  margin-top: 60px;
+  text-align: center;
+  font-family: 'Noto Sans JP';
+  font-weight: 300 ;
+  color: #505050;
+  /* MENU */
+}
+
+.underline{
+    border-bottom: 2px solid #505050;
+    width: 50px;
+    margin: 0 auto 45px auto;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  /* 画面が狭いとき折り返し */
+  /* MENU */
+
+}
+
+.menu-item {
+  width: 18rem;
+  text-align: center;
+}
+
+.menu-item-title{
+  display: inline-block;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.menu-item-description{
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 60px;
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.about {
+  position: relative; 
+  width: 100%;
+  /* padding-top: 46.3%; */
+  /* min-height: 300px; */
+  background-image: url(images/About.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-top: 45px;
+
+}
+
+.about-title-wrapper{
+  /* position: absolute;
+  top: 10%; 
+  left: 50%; */
+  /* transform: translateX(-50%); */
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 30px;
+  /* margin-bottom: 15px; */
+  /* margin-top: 60px; */
+  /* text-align: center; */
+  font-family: 'Noto Sans JP';
+  font-weight: 300 ;
+  color: #505050;
+  margin-bottom: 15px;
+}
+
+.underline-2{
+    border-bottom: 2px solid #505050;
+    width: 50px;
+    margin: 0 auto;
+}
+
+.about-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 10%;
+  padding-bottom: 10%;
+
+
+}
+
+.about-text {
+  flex: 5;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;   
+  align-items: flex-start;      
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-text-1{
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.about-text-2{
+  line-height: 2;
+  font-weight: 300;
+  /* flex-wrap: wrap; */
+  margin-bottom: 20px;
+}
+
+.about-button {
+  display: inline-block;
+  padding: 10px 60px;
+  background-color: #505050;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.about-image {
+  flex:5;
+  aspect-ratio: 3 / 2; /* ＝450 ÷ 300 */
+  min-width: 100px;
+  max-width: 450px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;      /* 横中央 */
+  justify-content: center;
+  text-align: center;
+}
+
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block; 
+}
+
+footer{
+  background-image: url(images/footer.png);
+  background-size:cover;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #505050;
+  color: #ffffff;
+  padding: 24px 40px;
+}
+
+
+
